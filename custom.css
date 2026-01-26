@@ -825,3 +825,104 @@ body.dark-mode .elementor-button {
 .navbar-toggler:focus {
   box-shadow: none;
 }
+
+
+/* V2 */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: fadeUp 0.9s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+section {
+  padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 50px 0;
+  }
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #0d6efd;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* DARK MODE ENHANCEMENTS */
+body.dark-mode {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+body.dark-mode .header-card {
+  background: #111827;
+}
+
+body.dark-mode .nav-link {
+  color: #e5e7eb !important;
+}
+
+body.dark-mode .nav-link:hover {
+  color: #38bdf8 !important;
+}
+
+body.dark-mode .service-card,
+body.dark-mode .review-face.front {
+  background: #1f2937;
+}
+
+body.dark-mode .site-footer {
+  background: #020617;
+  color: #cbd5e1;
+}
+
+body.dark-mode .footer-bottom {
+  background: linear-gradient(135deg, #020617, #020617);
+}
+
+/* Default header behaviour */
+.hero-header {
+  position: relative;
+  top: 0;
+  margin-bottom: 20px;
+}
+
+/* Absolute header only on homepage */
+body.home .hero-header {
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  z-index: 10;
+}
+
+.bg-clr{
+  background: linear-gradient(135deg, #003f9e, rgb(221 0 171));
+}
+
+.pd-200{
+  padding-top: 200px !important;
+}
