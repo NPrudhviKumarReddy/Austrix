@@ -4,15 +4,38 @@
     <meta charset="utf-8">
     <title>Austrix Digital Solutions - Digital Solutions Company | Australia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="theme-color" content="#0d6efd">
+
     <meta name="description"
         content="Australian digital solutions company delivering fast, reliable and accessible technology.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Austrix Digital Solutions",
+  "image": "https://austrix.com.au/logo.png",
+  "url": "https://austrix.com.au",
+  "telephone": "+61XXXXXXXXX",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Melbourne",
+    "addressRegion": "VIC",
+    "addressCountry": "AU"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Victoria"
+  }
+}
+</script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="./custom.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="home">
 
     <header class="hero-header">
         <div class="container header-card">
@@ -38,38 +61,132 @@
         </div>
     </header>
 
-<main class="container py-5">
-  <h1 class="mb-4">Contact Us</h1>
+<main id="main-content">
 
-  <form action="https://formspree.io/f/XXXXXX" method="POST" class="mb-5">
-    <div class="mb-3">
-      <label for="name" class="form-label">Name</label>
-      <input id="name" name="name" type="text" class="form-control" required>
+  <!-- CONTACT HERO -->
+  <section class="bg-clr elementor-section clr-whitebg-light-section pd-200">
+    <div class="container text-center">
+      <h1 class="mb-4">Contact Austrix Digital Solutions</h1>
+      <p class="lead mx-auto" style="max-width: 850px;">
+        Have a question, a project in mind, or need expert advice?
+        Get in touch with our Melbourne-based digital solutions team
+        and let’s discuss how we can support your business.
+      </p>
     </div>
+  </section>
 
-    <div class="mb-3">
-      <label for="email" class="form-label">Email</label>
-      <input id="email" name="email" type="email" class="form-control" required>
+  <!-- CONTACT CONTENT -->
+  <section class="elementor-section">
+    <div class="container">
+      <div class="row g-5 align-items-start">
+
+        <!-- CONTACT FORM -->
+        <div class="col-lg-6">
+          <h2 class="mb-4">Send Us a Message</h2>
+
+          <form
+            action="https://formspree.io/f/XXXXXX"
+            method="POST"
+            class="card p-4 shadow-sm">
+
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                class="form-control"
+                placeholder="John Smith"
+                required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                class="form-control"
+                placeholder="john@email.com"
+                required>
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label">How can we help?</label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-control"
+                rows="5"
+                placeholder="Tell us about your project or enquiry..."
+                required></textarea>
+            </div>
+
+            <button class="btn btn-primary mt-2">
+              Send Message
+            </button>
+
+            <p class="text-muted small mt-3 mb-0">
+              We usually respond within 1 business day.
+            </p>
+
+          </form>
+        </div>
+
+        <!-- CONTACT DETAILS -->
+        <div class="col-lg-6">
+          <h2 class="mb-4">Our Office</h2>
+
+          <div class="card p-4 shadow-sm mb-4">
+            <p class="mb-2">
+              <strong>📍 Location:</strong><br>
+              Melbourne, Victoria, Australia
+            </p>
+
+            <p class="mb-2">
+              <strong>📧 Email:</strong><br>
+              info@austrix.com.au
+            </p>
+
+            <p class="mb-0">
+              <strong>📞 Phone:</strong><br>
+              +61 XXX XXX XXX
+            </p>
+          </div>
+
+          <div class="card overflow-hidden shadow-sm">
+            <iframe
+              loading="lazy"
+              height="300"
+              class="w-100 border-0"
+              src="https://www.google.com/maps?q=Melbourne%2C%20Victoria&output=embed"
+              aria-label="Austrix Digital Solutions location map">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
     </div>
+  </section>
 
-    <div class="mb-3">
-      <label for="message" class="form-label">Message</label>
-      <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+  <!-- LOCAL SEO CTA -->
+  <section class="elementor-section clr-white bg-clr">
+    <div class="container text-center">
+      <h2 class="mb-4">Melbourne-Based Digital Solutions</h2>
+      <p class="mx-auto" style="max-width: 850px;">
+        Austrix Digital Solutions proudly works with Melbourne and
+        Australia-wide businesses, delivering secure, scalable, and
+        performance-driven digital systems.
+      </p>
+      <p>
+        If you’re looking for a reliable digital partner who understands
+        local business needs, we’d love to hear from you.
+      </p>
     </div>
+  </section>
 
-    <button class="btn btn-primary">Send Message</button>
-  </form>
-
-  <h2 class="h5">Our Office</h2>
-  <p>Melbourne, Victoria, Australia</p>
-
-  <iframe
-    loading="lazy"
-    class="w-100 border"
-    height="300"
-    src="https://www.google.com/maps?q=Melbourne&output=embed">
-  </iframe>
 </main>
+
 
     <footer class="site-footer">
         <div class="container">
